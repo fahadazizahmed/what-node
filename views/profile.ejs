@@ -1,0 +1,50 @@
+<html>
+
+<head>
+  <title>Server</title>
+
+<link href="/assets/styles.css" rel="stylesheet" type="text/css"/>
+
+
+</head>
+<body>
+<!--
+
+<h1>welcome to the profile of <%= person%></h1>-->
+<% include partials/general.ejs %>
+<ul>
+  <li>The age of the <%= person%> is <%= data.age%></li>
+  <li>The cgpa of the <%= person%> is <%= data.cgpa%></li>
+  <li>The destination of the <%= person%> is <%= data.destination%></li>
+</ul>
+<p>No my Hobbies is </p>
+
+
+<ui>
+
+<% data.hobby.forEach(function(r){%><!--we colse this tage here because we need to write html in next line-->
+  <li><%= r%></li>
+
+  <%}) ;     %><!--we open this tag here again because we write javascript code here
+</ui>
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>
